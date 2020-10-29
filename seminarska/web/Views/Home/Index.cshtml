@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Mao restaurant</h1>
+
+    @foreach (var product in Model.Products)
+    {
+        <h1>@product.Id</h1>
+    }
+
+</div>
